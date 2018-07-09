@@ -12,7 +12,8 @@ class App extends Component {
     render() {
         return (
             <div>
-                {this.props.loading ? <LoadingBar /> : <NewTweet />}
+                <LoadingBar />
+                {this.props.loading ? null : <NewTweet />}
             </div>
         )
     }
